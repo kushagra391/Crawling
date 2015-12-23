@@ -27,8 +27,7 @@ public class Crawler {
 		String seed3 = "http://en.wikipedia.org/wiki/Illegal_immigration";
 		String seed4 = "http://ocp.hul.harvard.edu/immigration/";
 		String seed5 = "http://www.fairus.org/issues/illegal-immigration";
-		
-		
+
 		// Populate seeds
 		ArrayList<String> seeds = new ArrayList<String>();
 		seeds.add(seed1);
@@ -80,7 +79,6 @@ public class Crawler {
 	}
 
 	private static void store_inlinks() throws FileNotFoundException, UnsupportedEncodingException {
-	
 		System.out.println("Total Inlinks: " + inlink_mapper.size());
 		StringBuilder insertString = new StringBuilder();
 		String tab = "\t";
